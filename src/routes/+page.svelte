@@ -59,7 +59,7 @@
 				</p>
 			</div>
 
-			<a href="#" class="inline-block mt-8 bg-white/20 backdrop-blur-md text-white text-sm font-medium px-5 py-2.5 rounded-full hover:bg-white/30 transition border border-white/30">
+			<a href="#" class="inline-block mt-8 bg-white/20 backdrop-blur-md text-white text-sm font-medium px-3 py-2.5 rounded-full hover:bg-white/30 transition border border-white/30">
 				Get started
 			</a>
 		</div>
