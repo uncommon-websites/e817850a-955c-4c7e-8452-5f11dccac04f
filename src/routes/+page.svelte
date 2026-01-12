@@ -23,60 +23,46 @@
 
 <main class="w-full overflow-x-hidden">
 	<!-- Hero Section -->
-	<section class="relative min-h-[90vh] flex flex-col justify-between px-6 py-6 md:px-12 md:py-8 bg-gradient-to-b from-[#6b6b6b] to-[#3a3a3a]">
+	<section class="relative min-h-[90vh] flex flex-col justify-between px-6 py-6 md:px-12 md:py-8 overflow-hidden">
+		
+		<!-- Background Image -->
+		<div class="absolute inset-0 w-full h-full">
+			<img src="/uploaded/1767993607629-nwtltw6.png" alt="" class="w-full h-full object-cover object-bottom" />
+		</div>
+		
+		<!-- Geometric Line Overlay -->
+		<svg class="absolute inset-0 w-full h-full pointer-events-none opacity-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+			<path d="M 800 0 Q 1200 400 800 800 Q 400 1200 800 1600" stroke="white" stroke-width="1" fill="none" opacity="0.3"/>
+			<path d="M 1000 0 Q 1400 400 1000 800 Q 600 1200 1000 1600" stroke="white" stroke-width="1" fill="none" opacity="0.3"/>
+			<path d="M 1200 0 Q 1600 400 1200 800 Q 800 1200 1200 1600" stroke="white" stroke-width="1" fill="none" opacity="0.3"/>
+			<line x1="0" y1="500" x2="2000" y2="500" stroke="white" stroke-width="0.5" opacity="0.2"/>
+			<line x1="0" y1="700" x2="2000" y2="700" stroke="white" stroke-width="0.5" opacity="0.2"/>
+		</svg>
+
 		<!-- Header -->
 		<header class="flex justify-between items-start z-20">
-			<div class="font-mono text-sm tracking-widest font-bold flex items-center gap-2 text-white">
-				<svg width="45" height="58" viewBox="0 0 90 115" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path fill-rule="evenodd" clip-rule="evenodd" d="M31.8701 9.95388L15.3109 19.4791L31.8819 29.0064L48.446 19.4812L31.8701 9.95388ZM53.2588 27.7795L36.6927 37.3058L36.6911 56.3603L53.2588 46.8319V27.7795ZM58.0696 55.1313L41.5014 64.66L58.072 74.187L74.6383 64.6605L58.0696 55.1313ZM79.4486 72.9601L62.883 82.4862V101.538L79.4486 92.0122V72.9601ZM53.2614 101.539V82.4864L36.6903 72.9591V92.012L53.2614 101.539ZM27.0694 56.3613L10.5003 46.8319V27.7788L27.0711 37.3058L27.0694 56.3613ZM27.0687 67.4269L4.48643 54.4394C2.25391 53.1554 0.878662 50.7828 0.878662 48.215V19.4801C0.878662 17.7684 1.79538 16.1867 3.28356 15.3307L28.2608 0.963381C30.4933 -0.320696 33.2439 -0.321154 35.4766 0.962171L60.474 15.3299C61.963 16.1857 62.8804 17.7679 62.8804 19.4801V46.8319L86.665 60.5111C88.1535 61.3671 89.0702 62.9489 89.0702 64.6607V93.3956C89.0702 95.9635 87.6948 98.3361 85.4621 99.62L60.4776 113.988C58.9894 114.843 57.1558 114.843 55.6673 113.988L30.6773 99.6202C28.4444 98.3365 27.0687 95.9635 27.0687 93.3954V67.4269Z" fill="white"/>
-				</svg>
-				<span>MERCATOR</span>
+			<div class="flex items-center gap-2 text-white">
+				<span class="text-xl font-light tracking-wide">Mercator</span>
 			</div>
+			<a href="#" class="text-white text-sm hover:opacity-80 transition">Login</a>
 		</header>
 
 		<!-- Main Content -->
-		<div class="flex-grow flex flex-col justify-center items-center relative mt-10 md:mt-0">
-			<div class="w-full flex justify-between items-center absolute top-1/2 -translate-y-1/2 z-10 pointer-events-none px-4 md:px-16 lg:px-32">
-				<h1 class="text-4xl md:text-7xl lg:text-8xl font-mono text-white opacity-90">Inventory</h1>
-				<h1 class="text-4xl md:text-7xl lg:text-8xl font-mono text-white opacity-90">Reimagined</h1>
+		<div class="flex-grow flex flex-col justify-center max-w-4xl z-20">
+			<h1 class="text-3xl md:text-5xl lg:text-6xl font-sans text-white leading-[1.1] mb-12 mr-12 md:mr-24">
+				Transforming legacy supply chains into intelligent, responsive systems.
+			</h1>
+			
+			<div class="space-y-6 text-white/90 text-sm md:text-base leading-relaxed max-w-xl">
+				<p class="font-medium">
+					Our team spent over a decade leading groundbreaking AI efforts across Google. Since then, we've immersed ourselves in retail, co-developing intelligence with our favorite brands to address their most pressing challenges.
+				</p>
 			</div>
 
-			<!-- Image Container -->
-			<div class="relative w-full max-w-lg aspect-square flex items-center justify-center z-0">
-				<!-- Placeholder for Glass Cube -->
-				<div class="w-64 h-64 md:w-80 md:h-80 relative">
-					<img 
-						src="/generated/image-modern-retail-warehouse-with-organized-i-1767978693395-0.webp" 
-						alt="Modern retail warehouse with organized inventory" 
-						class="w-full h-full object-cover shadow-2xl opacity-80"
-						style="mask-image: radial-gradient(circle, black 40%, transparent 80%); -webkit-mask-image: radial-gradient(circle, black 40%, transparent 80%);"
-					/>
-					<!-- Glass Box Border Simulation -->
-					<div class="absolute inset-0 border border-white/40 bg-white/5 backdrop-blur-[1px] shadow-2xl"></div>
-					<div class="absolute inset-4 border border-white/20"></div>
-				</div>
-			</div>
+			<a href="#" class="inline-block mt-8 bg-white/20 backdrop-blur-md text-white text-sm font-medium px-5 py-2.5 rounded-full hover:bg-white/30 transition border border-white/30">
+				Get started
+			</a>
 		</div>
-
-		<!-- Footer of Hero -->
-		<div class="flex flex-col items-center gap-8 pb-10 z-20">
-			<p class="text-center max-w-md text-sm md:text-base font-mono text-white/90 leading-relaxed">
-				The first system of action for supply chain management.<br class="hidden md:block" />
-				AI agents that automate decisions and drive revenue.
-			</p>
-			<div class="border border-white/30 rounded p-1 text-white">
-				{@html ArrowDown}
-			</div>
-		</div>
-	</section>
-
-	<!-- Intro Section -->
-	<section class="px-6 py-20 md:px-12 md:py-32 max-w-5xl mx-auto text-center">
-		<h2 class="text-2xl md:text-4xl lg:text-5xl font-mono leading-tight md:leading-snug">
-			Mercator automates supply chain decisions by extracting constraints 
-			from communications and orchestrating AI agents—enabling retail brands 
-			to capture revenue they're missing from manual planning.
-		</h2>
 	</section>
 
 	<!-- How We Do It Section -->
@@ -95,7 +81,8 @@
 			<!-- Card 1 -->
 			<div class="group">
 				<div class="relative aspect-square mb-6 overflow-hidden rounded-sm bg-gray-100">
-					<img src="/generated/image-close-up-of-hands-analyzing-data-on-a-ta-1767978696212-1.webp" alt="Extract Constraints" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-500" />
+					<img src="/generated/image-close-up-of-hands-analyzing-data-on-a-ta-1767978696212-1.webp" alt="Extract Constraints" class="w-full h-full object-cover transition duration-500" style="filter: grayscale(100%) sepia(20%) hue-rotate(180deg) saturate(150%) brightness(0.9);" />
+					<div class="absolute inset-0 bg-blue-950/10 group-hover:bg-transparent transition duration-500"></div>
 					<div class="absolute top-4 left-4 w-8 h-8 bg-white/90 rounded-full flex items-center justify-center font-mono text-sm">1</div>
 				</div>
 				<h4 class="font-mono font-bold text-lg mb-2">Extract Constraints</h4>
@@ -107,7 +94,8 @@
 			<!-- Card 2 -->
 			<div class="group">
 				<div class="relative aspect-square mb-6 overflow-hidden rounded-sm bg-gray-100">
-					<img src="/generated/image-supply-chain-planner-working-at-desk-wit-1767978698885-2.webp" alt="Orchestrate AI Agents" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-500" />
+					<img src="/generated/image-supply-chain-planner-working-at-desk-wit-1767978698885-2.webp" alt="Orchestrate AI Agents" class="w-full h-full object-cover transition duration-500" style="filter: grayscale(100%) sepia(20%) hue-rotate(180deg) saturate(150%) brightness(0.9);" />
+					<div class="absolute inset-0 bg-blue-950/10 group-hover:bg-transparent transition duration-500"></div>
 					<div class="absolute top-4 left-4 w-8 h-8 bg-white/90 rounded-full flex items-center justify-center font-mono text-sm">2</div>
 				</div>
 				<h4 class="font-mono font-bold text-lg mb-2">Orchestrate AI Agents</h4>
@@ -119,7 +107,8 @@
 			<!-- Card 3 -->
 			<div class="group">
 				<div class="relative aspect-square mb-6 overflow-hidden rounded-sm bg-gray-100">
-					<img src="/generated/image-retail-store-floor-with-customers-shoppi-1767978701634-3.webp" alt="Real-Time Decisions" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-500" />
+					<img src="/generated/image-retail-store-floor-with-customers-shoppi-1767978701634-3.webp" alt="Real-Time Decisions" class="w-full h-full object-cover transition duration-500" style="filter: grayscale(100%) sepia(20%) hue-rotate(180deg) saturate(150%) brightness(0.9);" />
+					<div class="absolute inset-0 bg-blue-950/10 group-hover:bg-transparent transition duration-500"></div>
 					<div class="absolute top-4 left-4 w-8 h-8 bg-white/90 rounded-full flex items-center justify-center font-mono text-sm">3</div>
 				</div>
 				<h4 class="font-mono font-bold text-lg mb-2">Real-Time Decisions</h4>
@@ -131,11 +120,12 @@
 			<!-- Card 4 -->
 			<div class="group">
 				<div class="relative aspect-square mb-6 overflow-hidden rounded-sm bg-gray-100">
-					<img src="/generated/image-business-analytics-dashboard-on-screen-s-1767978704308-4.webp" alt="Drive Revenue" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-500" />
+					<img src="/generated/image-business-analytics-dashboard-on-screen-s-1767978704308-4.webp" alt="Drive Revenue" class="w-full h-full object-cover transition duration-500" style="filter: grayscale(100%) sepia(20%) hue-rotate(180deg) saturate(150%) brightness(0.9);" />
+					<div class="absolute inset-0 bg-blue-950/10 group-hover:bg-transparent transition duration-500"></div>
 					<div class="absolute top-4 left-4 w-8 h-8 bg-white/90 rounded-full flex items-center justify-center font-mono text-sm">4</div>
 				</div>
-				<h4 class="font-mono font-bold text-lg mb-2">Drive Revenue</h4>
-				<p class="text-sm text-gray-600 leading-relaxed">
+				<h4 class="font-mono font-bold text-lg mb-2 blur-reveal-delay-2">Drive Revenue</h4>
+				<p class="text-sm text-gray-600 leading-relaxed blur-reveal-delay-3">
 					Not just automation—enable what humans can't do today. Cuyana saw +6% incremental revenue in less than one month using Mercator.
 				</p>
 			</div>
@@ -146,20 +136,20 @@
 	<section class="px-6 py-12 md:px-12 md:py-24 bg-[#fdfbf7]">
 		<div class="flex items-center gap-3 mb-12">
 			<div class="w-1.5 h-1.5 bg-black rounded-full"></div>
-			<span class="font-mono text-xs uppercase tracking-wider">Our Story</span>
+			<span class="font-mono text-xs uppercase tracking-wider blur-reveal">Our Story</span>
 		</div>
 
 		<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
 			<div class="lg:col-span-5 lg:col-start-7 flex flex-col gap-8">
-				<blockquote class="font-mono text-xl md:text-2xl leading-relaxed">
+				<blockquote class="font-mono text-xl md:text-2xl leading-relaxed blur-reveal-delay-1">
 					"Grace and I spent over a decade leading AI at Google—I worked on Gemini and TensorFlow, and Grace was tech lead on a supply chain moonshot at Google X. We saw firsthand how manual processes waste resources and leave money on the table. Retail is leaking $1.7T annually because planners are making millions of decisions with incomplete information. We're building Mercator to change that—AI agents that capture dynamic constraints, learn company playbooks, and automate decisions that humans simply can't make at scale. We're not just reducing costs. We're enabling revenue growth that was impossible before."
 				</blockquote>
 
 				<div class="flex items-center gap-4 mt-4">
 					<img src="/generated/image-professional-asian-woman-in-her-30s-conf-1767978706790-5.webp" alt="Megha Malpani" class="w-16 h-16 object-cover grayscale" />
 					<div>
-						<div class="font-mono font-bold text-sm">Megha Malpani</div>
-						<div class="font-mono text-xs text-gray-500">Co-founder & CEO</div>
+						<div class="font-mono font-bold text-sm blur-reveal-delay-2">Megha Malpani</div>
+						<div class="font-mono text-xs text-gray-500 blur-reveal-delay-3">Co-founder & CEO</div>
 					</div>
 				</div>
 			</div>
@@ -170,10 +160,10 @@
 	<section class="px-6 py-12 md:px-12 md:py-20">
 		<div class="flex items-center gap-3 mb-8">
 			<div class="w-1.5 h-1.5 bg-black rounded-full"></div>
-			<span class="font-mono text-xs uppercase tracking-wider">How It Works</span>
+			<span class="font-mono text-xs uppercase tracking-wider blur-reveal">How It Works</span>
 		</div>
 
-		<h3 class="text-xl md:text-2xl font-mono max-w-3xl mb-16 leading-relaxed">
+		<h3 class="text-xl md:text-2xl font-mono max-w-3xl mb-16 leading-relaxed blur-reveal-delay-1">
 			10k SKUs × 10+ Checks × 10+ Levers = 1M+ manual choices.<br class="hidden md:block" />
 			Mercator automates them all with AI agents that learn your playbooks.
 		</h3>
@@ -304,8 +294,8 @@
 			<!-- Item 1 -->
 			<div>
 				<div class="mb-4 text-gray-500">{@html IconGear}</div>
-				<h4 class="font-mono font-bold text-sm mb-2">Your Data,<br>Your Control</h4>
-				<p class="text-xs text-gray-600 leading-relaxed">
+				<h4 class="font-mono font-bold text-sm mb-2 blur-reveal-delay-2">Your Data,<br>Your Control</h4>
+				<p class="text-xs text-gray-600 leading-relaxed blur-reveal-delay-3">
 					Mercator never uses your supply chain data to train AI models. Optional Zero Data Retention ensures your inputs are not logged or stored. You control access, retention, and deletion at every stage.
 				</p>
 			</div>
@@ -313,8 +303,8 @@
 			<!-- Item 2 -->
 			<div>
 				<div class="mb-4 text-gray-500">{@html IconLock}</div>
-				<h4 class="font-mono font-bold text-sm mb-2">Secure, Encrypted<br>Infrastructure</h4>
-				<p class="text-xs text-gray-600 leading-relaxed">
+				<h4 class="font-mono font-bold text-sm mb-2 blur-reveal-delay-2">Secure, Encrypted<br>Infrastructure</h4>
+				<p class="text-xs text-gray-600 leading-relaxed blur-reveal-delay-3">
 					All data is encrypted in transit and at rest (TLS 1.2+, AES-256) and processed on multi-region, highly available cloud infrastructure with continuous monitoring and redundancy.
 				</p>
 			</div>
@@ -322,8 +312,8 @@
 			<!-- Item 3 -->
 			<div>
 				<div class="mb-4 text-gray-500">{@html IconFile}</div>
-				<h4 class="font-mono font-bold text-sm mb-2">Granular Retention &<br>Privacy Controls</h4>
-				<p class="text-xs text-gray-600 leading-relaxed">
+				<h4 class="font-mono font-bold text-sm mb-2 blur-reveal-delay-2">Granular Retention &<br>Privacy Controls</h4>
+				<p class="text-xs text-gray-600 leading-relaxed blur-reveal-delay-3">
 					Retention and deletion follow GDPR/CCPA-aligned workflows. You control how long supply chain data is stored and can delete it at any time.
 				</p>
 			</div>
@@ -331,8 +321,8 @@
 			<!-- Item 4 -->
 			<div>
 				<div class="mb-4 text-gray-500">{@html IconAward}</div>
-				<h4 class="font-mono font-bold text-sm mb-2">Independently<br>Audited Compliance</h4>
-				<p class="text-xs text-gray-600 leading-relaxed">
+				<h4 class="font-mono font-bold text-sm mb-2 blur-reveal-delay-2">Independently<br>Audited Compliance</h4>
+				<p class="text-xs text-gray-600 leading-relaxed blur-reveal-delay-3">
 					SOC 2 Type II and ISO 27001 audited controls validate our commitments to security, availability, and confidentiality. Regular penetration testing ensures ongoing compliance.
 				</p>
 			</div>
@@ -340,8 +330,8 @@
 			<!-- Item 5 -->
 			<div>
 				<div class="mb-4 text-gray-500">{@html IconKey}</div>
-				<h4 class="font-mono font-bold text-sm mb-2">Enterprise Access &<br>Threat Protection</h4>
-				<p class="text-xs text-gray-600 leading-relaxed">
+				<h4 class="font-mono font-bold text-sm mb-2 blur-reveal-delay-2">Enterprise Access &<br>Threat Protection</h4>
+				<p class="text-xs text-gray-600 leading-relaxed blur-reveal-delay-3">
 					SSO and SCIM provisioning, MFA, and granular role-based access controls ensure alignment with your enterprise identity architecture. Continuous monitoring protects against threats.
 				</p>
 			</div>
@@ -349,24 +339,23 @@
 			<!-- Item 6 -->
 			<div>
 				<div class="mb-4 text-gray-500">{@html IconShield}</div>
-				<h4 class="font-mono font-bold text-sm mb-2">Built for Retail<br>Enterprise Standards</h4>
-				<a href="#" class="inline-flex items-center gap-2 bg-black text-white text-xs font-mono py-2 px-4 mt-2 hover:bg-gray-800 transition">
+				<h4 class="font-mono font-bold text-sm mb-2 blur-reveal-delay-2">Built for Retail<br>Enterprise Standards</h4>
+				<a href="#" class="inline-flex items-center gap-2 bg-black text-white text-xs font-mono py-2 px-4 mt-2 hover:bg-gray-800 transition blur-reveal-delay-3">
 					Our security portal {@html ArrowUpRight}
 				</a>
 			</div>
 		</div>
 	</section>
 
-	<!-- CTA Section -->
-	<section class="px-6 py-20 md:py-32 text-center">
-		<h2 class="text-2xl md:text-4xl font-mono mb-8">Ready to capture the revenue you're missing?</h2>
-		<button class="bg-black text-white px-8 py-3 font-mono text-sm hover:bg-gray-800 transition">
-			Book a demo
-		</button>
-	</section>
-
 	<!-- Footer -->
 	<footer class="bg-black text-white pt-16 pb-0 overflow-hidden">
+		<!-- CTA Section -->
+		<section class="px-6 py-20 md:py-32 text-center">
+			<h2 class="text-2xl md:text-4xl font-mono mb-8">Ready to capture the revenue you're missing?</h2>
+			<button class="bg-white text-black px-8 py-3 font-mono text-sm hover:bg-gray-100 transition">
+				Book a demo
+			</button>
+		</section>
 		<div class="px-6 md:px-12 mb-16 flex flex-col md:flex-row justify-between gap-12">
 			<div class="text-xs font-mono text-gray-400">
 				© Mercator Intelligence 2025
@@ -389,8 +378,8 @@
 		</div>
 
 		<!-- Big Logo -->
-		<div class="w-full flex justify-center overflow-hidden">
-			<div class="text-[10vw] md:text-[12vw] leading-none font-black tracking-tighter text-white select-none relative" style="font-family: 'Inter', sans-serif;">
+		<div class="relative w-full flex justify-center overflow-hidden z-10">
+			<div class="text-[10vw] md:text-[12vw] leading-none font-black tracking-tighter text-white select-none relative blur-reveal-delay-2" style="font-family: 'Inter', sans-serif;">
 				MERCATOR
 				<!-- Dot texture overlay -->
 				<div class="absolute inset-0 pointer-events-none" style="background-image: radial-gradient(circle, black 25%, transparent 25%); background-size: 6px 6px;"></div>
@@ -403,5 +392,49 @@
 	:global(body) {
 		background-color: #fdfbf7;
 	}
-</style>
 
+	@keyframes blurReveal {
+		from {
+			filter: blur(10px);
+			opacity: 0;
+		}
+		to {
+			filter: blur(0);
+			opacity: 1;
+		}
+	}
+
+	.blur-reveal {
+		animation: blurReveal 0.8s ease-out forwards;
+	}
+
+	.blur-reveal-delay-1 {
+		animation: blurReveal 0.8s ease-out 0.1s forwards;
+		opacity: 0;
+	}
+
+	.blur-reveal-delay-2 {
+		animation: blurReveal 0.8s ease-out 0.2s forwards;
+		opacity: 0;
+	}
+
+	.blur-reveal-delay-3 {
+		animation: blurReveal 0.8s ease-out 0.3s forwards;
+		opacity: 0;
+	}
+
+	.blur-reveal-delay-4 {
+		animation: blurReveal 0.8s ease-out 0.4s forwards;
+		opacity: 0;
+	}
+
+	.blur-reveal-delay-5 {
+		animation: blurReveal 0.8s ease-out 0.5s forwards;
+		opacity: 0;
+	}
+
+	.blur-reveal-delay-6 {
+		animation: blurReveal 0.8s ease-out 0.6s forwards;
+		opacity: 0;
+	}
+</style>
